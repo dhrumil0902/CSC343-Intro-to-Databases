@@ -15,7 +15,7 @@
 - Refer to the PostgreSQL documentation
 - Recognize limits to the expressive power of standard SQL
 
-## Assignment 3
+## Assignment 3 (Final Project)
 ### Part 1
 - We had to create our own relational database
 - The prompt we were given "Suppose a new company is trying to break into     the concert ticket business and you are designing the database back-end     for their app. Create a database to support entering and storing             information related to concerts and pruchasing tickets "
