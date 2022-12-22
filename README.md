@@ -18,7 +18,7 @@
 ## Assignment 3 (Final Project)
 ### Part 1
 - We had to create our own relational database
-- The prompt we were given "Suppose a new company is trying to break into     the concert ticket business and you are designing the database back-end     for their app. Create a database to support entering and storing             information related to concerts and pruchasing tickets "
+- The prompt we were given "Suppose a new company is trying to break into     the concert ticket business and you are designing the database back-end     for their app. Create a relational schema to support entering and storing             information for concerts, venues and purchasing of tickets "
   A3->A3.pdf
 - Identified tradeoffs that must be made when designing a schema in the     relational model, and make reasonable choices
 - Expressed a schema in SQL’s Data Definition Language
