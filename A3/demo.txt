@@ -1,0 +1,119 @@
+-------------------- Loading schema and data: --------------------
+
+psql:schema.ddl:1: NOTICE:  drop cascades to 14 other objects
+DETAIL:  drop cascades to type phone_number
+drop cascades to table owner
+drop cascades to sequence vid_seq
+drop cascades to table venue
+drop cascades to table concert
+drop cascades to sequence section_id_seq
+drop cascades to table section
+drop cascades to table seat
+drop cascades to table prices
+drop cascades to table users
+drop cascades to table purchasedticket
+drop cascades to view ticketssold
+drop cascades to view seatcount
+drop cascades to table userpurchases
+DROP SCHEMA
+CREATE SCHEMA
+SET
+psql:schema.ddl:12: NOTICE:  type "phone_number" does not exist, skipping
+DROP DOMAIN
+CREATE DOMAIN
+CREATE TABLE
+psql:schema.ddl:29: NOTICE:  sequence "vid_seq" does not exist, skipping
+DROP SEQUENCE
+CREATE SEQUENCE
+CREATE TABLE
+CREATE TABLE
+psql:schema.ddl:55: NOTICE:  sequence "section_id_seq" does not exist, skipping
+DROP SEQUENCE
+CREATE SEQUENCE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+SET
+INSERT 0 1
+INSERT 0 1
+INSERT 0 2
+INSERT 0 3
+INSERT 0 4
+INSERT 0 3
+INSERT 0 15
+INSERT 0 1
+INSERT 0 1
+INSERT 0 3
+INSERT 0 18
+INSERT 0 1
+INSERT 0 1
+INSERT 0 3
+INSERT 0 10
+INSERT 0 10
+INSERT 0 10
+INSERT 0 1
+INSERT 0 2
+INSERT 0 1
+INSERT 0 2
+INSERT 0 2
+INSERT 0 6
+INSERT 0 3
+INSERT 0 3
+INSERT 0 3
+INSERT 0 1
+INSERT 0 5
+
+-------------------- Query 1: -----------------------------------
+
+SET
+psql:q1.sql:4: NOTICE:  view "ticketssold" does not exist, skipping
+DROP VIEW
+psql:q1.sql:5: NOTICE:  view "seatcount" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+CREATE VIEW
+             concert_name              |      venue       |      datetime       | total_value | percent_sold 
+---------------------------------------+------------------+---------------------+-------------+--------------
+ Elf in Concert                        | Roy Thomson Hall | 2022-12-10 19:30:00 |         159 |            4
+ Ron Sexmith                           | Massey Hall      | 2022-12-03 19:30:00 |         130 |            4
+ Women's Blues Review                  | Massey Hall      | 2022-11-25 20:00:00 |         150 |            4
+ Mariah Carey - Merry Christmas to all | ScotiaBank Arena | 2022-12-11 20:00:00 |         388 |            6
+ Mariah Carey - Merry Christmas to all | ScotiaBank Arena | 2022-12-09 20:00:00 |         986 |            3
+(5 rows)
+
+
+-------------------- Query 2: -----------------------------------
+
+SET
+                        owner                        |  contact   | venues_owned 
+-----------------------------------------------------+------------+--------------
+ Maple Leaf Sports & Entertainment                   | 7788701234 |            1
+ The Corporation of Massey Hall and Roy Thomson Hall | 7788702678 |            2
+(2 rows)
+
+
+-------------------- Query 3: -----------------------------------
+
+SET
+ vid |    venue_name    | percent_seats_accessible 
+-----+------------------+--------------------------
+   2 | Roy Thomson Hall |                        0
+   1 | Massey Hall      |                       24
+   3 | ScotiaBank Arena |                       33
+(3 rows)
+
+
+-------------------- Query 4: -----------------------------------
+
+SET
+psql:q4.sql:5: NOTICE:  table "userpurchases" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+INSERT 0 3
+ username 
+----------
+ cristonc
+(1 row)
+
